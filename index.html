@@ -51,6 +51,30 @@
       display: block;
     }
 
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-info img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 250px;
+    }
+
     form {
       display: flex;
       flex-direction: column;
@@ -121,12 +145,24 @@
 
     <section id="contact" class="tab-content">
       <h2>Contact</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="contact-container">
+        <div class="contact-info">
+          <img src="profile.jpg" alt="Xuan Quoc Vo">
+          <p><strong>Email:</strong> xuanvo@email.com</p>
+          <p><strong>Institution:</strong> University of Pittsburgh</p>
+          <p><strong>Department:</strong> Medicine</p>
+          <p><strong>Location:</strong> Pittsburgh, PA, USA</p>
+          <p><a href="https://maps.google.com/?q=University+of+Pittsburgh" target="_blank">View on Map</a></p>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
