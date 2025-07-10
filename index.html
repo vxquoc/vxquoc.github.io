@@ -74,10 +74,20 @@
     .about-text {
       flex: 2;
       min-width: 250px;
+      padding-left: 0; /* Make sure there's no unintended padding */
     }
+    .about-text h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #003366;
+  }
     @media (max-width: 768px) {
       .about-container {
         flex-direction: column;
+      }
+      .about-text, .about-photo 
+      { 
+        width: 100%;
       }
     }
 
@@ -88,8 +98,6 @@
     color: #003366;
     margin-bottom: 0.5rem;
   }
-
-    
     .contact-container {
       display: flex;
       flex-wrap: wrap;
@@ -177,20 +185,16 @@
             my research advances both fundamental science and practical tools for translational medicine. 
             By applying physical rigor to biological systems, I aim to develop novel platforms for disease modelling, drug testing, and personalized medicine.</p>
           <h3>Education</h3>
-          <p><ul>
             <li><strong>2019</strong>: PhD in Mechanical Engineering, Nanyang Technological University, Singapore.</li>
             <li><strong>2013</strong>: Master in Mechanical Engineering, HCMC University of Technology, Vietnam.</li>
             <li><strong>2010</strong>: Bachelor in Mechanical Engineering, HCMC University of Technology, Vietnam.</li>
-          <ul></p> 
           <h3>Current and Past Posittions</h3>
-            <p><ul>
               <li><strong>Nov, 2023 – Present:</strong> Research Instructor, Department of Medicine, University of Pittsburgh, USA. </li>
               <li><strong>2022 - Nov, 2023:</strong> Postdoctoral Research Associate, Department of Medicine, University of Pittsburgh, USA. </li>
               <li><strong>2019 - 2021:</strong> Postdoctoral Research Fellow, Nanyang Technological University, Singapore.</li>
               <li><strong>2013 - 2014:</strong> Research Associate, Vietnam National Key Laboratory for Digital Control and System Engineering, HCM City, Vietnam. </li>
-            <ul></p> 
           <h3>Curriculum Vitae</h3>
-            <p><a href="cv_quoc_vo.pdf" target="_blank">Download CV (PDF)</a></p>     
+            <p><a href="cv_quoc_vo.pdf" target="_blank">Download CV (PDF)</a></p>
         </div>
       </div>
     </section>
