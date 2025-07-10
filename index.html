@@ -1,35 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xuan Quoc Vo - Research Instructor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .tab-nav {
+      text-align: center;
+      background-color: #eee;
+      padding: 1rem 0;
+    }
+
+    .tab-button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .tab-button.active {
+      border-bottom: 2px solid #003366;
+      color: #000;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 2rem;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 0.7rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
 <body>
   <header>
     <h1>Xuan Quoc Vo</h1>
-    <p>Research Instructor, University of Pittsburgh</p>
+    <p>Research Instructor, Department of Medicine<br>University of Pittsburgh</p>
   </header>
 
-  <!-- Tab navigation -->
   <nav class="tab-nav">
-    <button class="tab-button active" onclick="openTab('about')">About</button>
-    <button class="tab-button" onclick="openTab('research')">Research</button>
-    <button class="tab-button" onclick="openTab('publications')">Publications</button>
-    <button class="tab-button" onclick="openTab('cv')">CV</button>
-    <button class="tab-button" onclick="openTab('contact')">Contact</button>
+    <button class="tab-button active" onclick="openTab('about', event)">About</button>
+    <button class="tab-button" onclick="openTab('research', event)">Research</button>
+    <button class="tab-button" onclick="openTab('publications', event)">Publications</button>
+    <button class="tab-button" onclick="openTab('cv', event)">CV</button>
+    <button class="tab-button" onclick="openTab('contact', event)">Contact</button>
   </nav>
 
-  <!-- Tab content sections -->
   <main>
     <section id="about" class="tab-content active">
       <h2>About Me</h2>
-      <p>I work at the intersection of soft matter physics and biomedical engineering...</p>
+      <p>I work at the intersection of soft matter physics and biomedical engineering, focusing on droplet–substrate interactions and organs-on-chips. My goal is to advance research that bridges physical principles with translational biomedical applications.</p>
     </section>
 
     <section id="research" class="tab-content">
       <h2>Research</h2>
-      <p>My research combines experimental techniques and modeling...</p>
+      <p>My research combines experimental techniques and theoretical modeling to understand complex fluid dynamics, wetting phenomena, and their implications in bioengineering systems such as organ-on-chip platforms.</p>
     </section>
 
     <section id="publications" class="tab-content">
-      <h2>Publications</h2>
+      <h2>Selected Publications</h2>
       <ul>
-        <li>2024 – Droplet dynamics... (<em>Nature Communications</em>)</li>
-        <li>2023 – Wetting effects... (<em>PRL</em>)</li>
+        <li><strong>2024:</strong> Droplet dynamics on patterned substrates. <em>Nature Communications</em></li>
+        <li><strong>2023:</strong> Substrate wetting and elastocapillary effects. <em>Physical Review Letters</em></li>
+        <li><strong>2022:</strong> Microfluidic platforms for disease modeling. <em>Advanced Functional Materials</em></li>
       </ul>
     </section>
 
@@ -43,7 +124,7 @@
       <form action="https://formspree.io/f/your-form-id" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
@@ -54,7 +135,7 @@
   </footer>
 
   <script>
-    function openTab(tabId) {
+    function openTab(tabId, event) {
       // Hide all tab content
       document.querySelectorAll('.tab-content').forEach(tab => {
         tab.classList.remove('active');
@@ -67,8 +148,10 @@
 
       // Show selected tab
       document.getElementById(tabId).classList.add('active');
+
       // Highlight the active button
       event.currentTarget.classList.add('active');
     }
   </script>
 </body>
+</html>
