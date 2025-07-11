@@ -24,7 +24,6 @@ footer {
       margin-top: 2rem;
     }
 
-/* Heading style for all pages */
 h2 {
   font-size: 2rem;
   color: #003366;
@@ -38,6 +37,19 @@ h3 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.3rem;
   }
+
+nav a {
+  font-size: 1.2rem;         /* Adjust text size */
+  font-weight: bold;         /* Optional: make it bold */
+  color: #003366;            /* Change this to any color you prefer */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+  color: #0055aa;             /* Optional: hover color */
+}
 
   .tab-nav {
     text-align: center;
