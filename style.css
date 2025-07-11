@@ -52,6 +52,15 @@ nav a:hover {
   color: #7F00FF;             /* Optional: hover color */
 }
 
+/* For images*/
+.image-caption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 /*All about About page*/
 .about-container {
     display: flex;
