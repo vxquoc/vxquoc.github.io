@@ -51,7 +51,7 @@ nav a:hover {
   color: #0055aa;             /* Optional: hover color */
 }
 
-  .tab-nav {
+/*  .tab-nav {
     text-align: center;
     background-color: #eee;
     padding: 1rem 0;
@@ -80,7 +80,7 @@ nav a:hover {
 
   .tab-content.active {
     display: block;
-  }
+  }*/
 
  .about-container {
     display: flex;
