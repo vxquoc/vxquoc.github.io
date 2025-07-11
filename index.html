@@ -8,3 +8,22 @@
   <p>If you're not redirected, <a href="about.html">click here</a>.</p>
 </body>
 </html>
+
+<script>
+    function openTab(tabId) {
+      // Hide all tab content
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Remove active class from all buttons
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Show selected tab
+      document.getElementById(tabId).classList.add('active');
+      // Highlight the active button
+      event.currentTarget.classList.add('active');
+    }
+  </script>
