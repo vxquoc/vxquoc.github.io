@@ -65,6 +65,8 @@ nav a:hover {
     width: 100%;
     /*max-width: 250px;*/
     border-radius: 8px;
+    height: auto;
+    display: block;
     margin-bottom: 1rem;
   }
   .about-bio {
