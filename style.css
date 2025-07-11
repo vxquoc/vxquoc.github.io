@@ -86,7 +86,28 @@ nav a:hover {
       width: 100%;
     }
   }
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
 
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
 /*  .tab-nav {
     text-align: center;
     background-color: #eee;
