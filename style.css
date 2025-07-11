@@ -24,130 +24,6 @@ footer {
       margin-top: 2rem;
     }
 
-    .tab-nav {
-      text-align: center;
-      background-color: #eee;
-      padding: 1rem 0;
-    }
-
-    .tab-button {
-      background: none;
-      border: none;
-      font-size: 2rem;
-      margin: 0 1rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      color: #003366;
-    }
-
-    .tab-button.active {
-      border-bottom: 2px solid #003366;
-      color: #000;
-    }
-
-    .tab-content {
-      display: none;
-      padding: 2rem;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-   .about-container {
-      display: flex;
-      flex-wrap: wrap-reverse;
-      gap: 2rem;
-      align-items: flex-start;
-    }
-    .about-photo {
-      flex: 1;
-      min-width: 250px;
-    }
-    .about-photo img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .about-bio {
-      font-style: italic;
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .about-text {
-      flex: 2;
-      min-width: 250px;
-      padding-left: 0; /* Make sure there's no unintended padding */
-    }
-    .about-text h3 {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-      color: #003366;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
-  }
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column;
-      }
-      .about-text, .about-photo 
-      { 
-        width: 100%;
-      }
-    }
-
-  .research-subsection {
-    margin-bottom: 1.5rem;
-  }
-  .research-subsection h3 {
-    color: #003366;
-    margin-bottom: 0.5rem;
-  }
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: flex-start;
-    }
-
-    .contact-info {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .contact-info img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    .contact-form {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-    }
-
-    input, textarea {
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #003366;
-      color: white;
-      padding: 0.7rem;
-      border: none;
-      cursor: pointer;
-    }
-
 /* Heading style for all pages */
 h2 {
   font-size: 2rem;
@@ -155,19 +31,129 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Layout for the contact page */
+h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: #003366;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+  }
+
+  .tab-nav {
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem 0;
+  }
+
+  .tab-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  .tab-button.active {
+    border-bottom: 2px solid #003366;
+    color: #000;
+  }
+
+  .tab-content {
+    display: none;
+    padding: 2rem;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+ .about-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .about-photo {
+    flex: 1;
+    min-width: 250px;
+  }
+  .about-photo img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .about-bio {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .about-text {
+    flex: 2;
+    min-width: 250px;
+    padding-left: 0; /* Make sure there's no unintended padding */
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-text, .about-photo 
+    { 
+      width: 100%;
+    }
+  }
+
+.research-subsection {
+  margin-bottom: 1.5rem;
+}
+.research-subsection h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
 .contact-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: flex-start;
 }
-.contact-info, .contact-form {
+
+.contact-info {
   flex: 1;
   min-width: 250px;
 }
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-  }
+
+.contact-info img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
 }
 
