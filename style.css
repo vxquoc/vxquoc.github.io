@@ -10,11 +10,18 @@ body {
       color: #333;
     }
 
-    header {
-      background: #003366;
+  header {
+    background: #003366;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+footer {
+      background: #333;
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
 
     .tab-nav {
@@ -26,7 +33,7 @@ body {
     .tab-button {
       background: none;
       border: none;
-      font-size: 1rem;
+      font-size: 2rem;
       margin: 0 1rem;
       padding: 0.5rem 1rem;
       cursor: pointer;
@@ -139,14 +146,6 @@ body {
       padding: 0.7rem;
       border: none;
       cursor: pointer;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
 
 /* Heading style for all pages */
