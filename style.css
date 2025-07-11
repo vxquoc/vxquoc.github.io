@@ -41,14 +41,14 @@ h3 {
 nav a {
   font-size: 2rem;         /* Adjust text size */
   font-weight: bold;         /* Optional: make it bold */
-  color: #003366;            /* Change this to any color you prefer */
+  color: #ffffff;            /* Change this to any color you prefer */
   text-decoration: none;
   margin: 0 0.5rem;
 }
 
 nav a:hover {
   text-decoration: underline; /* Optional: underline on hover */
-  color: #0055aa;             /* Optional: hover color */
+  color: #7F00FF;             /* Optional: hover color */
 }
 
 /*  .tab-nav {
