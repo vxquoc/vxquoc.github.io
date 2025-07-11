@@ -121,6 +121,12 @@ nav a:hover {
   color: #003366;
   margin-bottom: 0.5rem;
 }
+.research-page figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #555;
+}
 
 /*All about Contact page*/
 .contact-container {
