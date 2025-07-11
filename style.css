@@ -95,16 +95,18 @@ nav a:hover {
 .research-page .figure-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .research-page .figure-row img {
-  width: 100%;
   max-width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .research-page .figure-text {
