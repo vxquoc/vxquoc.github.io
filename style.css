@@ -1,3 +1,4 @@
+/*All about main, header, footer setting*/
 main {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -51,6 +52,7 @@ nav a:hover {
   color: #7F00FF;             /* Optional: hover color */
 }
 
+/*All about About page*/
 .about-container {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -88,6 +90,38 @@ nav a:hover {
       width: 100%;
     }
   }
+
+/*All about research page*/
+
+.research-page .figure-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.research-page .figure-row img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.research-page .figure-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.research-subsection {
+  margin-bottom: 1.5rem;
+}
+.research-subsection h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+/*All about Contact page*/
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -140,14 +174,7 @@ nav a:hover {
   .tab-content.active {
     display: block;
   }
-
-.research-subsection {
-  margin-bottom: 1.5rem;
-}
-.research-subsection h3 {
-  color: #003366;
-  margin-bottom: 0.5rem;
-}*/
+  */
 
 form {
   display: flex;
