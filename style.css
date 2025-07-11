@@ -51,6 +51,42 @@ nav a:hover {
   color: #7F00FF;             /* Optional: hover color */
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .about-photo {
+    flex: 1;
+    min-width: 250px;
+  }
+  .about-photo img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .about-bio {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .about-text {
+    flex: 2;
+    min-width: 250px;
+    padding-left: 0; 
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-text, .about-photo 
+    { 
+      width: 100%;
+    }
+  }
+
 /*  .tab-nav {
     text-align: center;
     background-color: #eee;
