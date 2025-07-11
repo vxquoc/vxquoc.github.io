@@ -143,3 +143,27 @@ body {
       padding: 1rem;
       margin-top: 2rem;
     }
+
+/* Heading style for all pages */
+h2 {
+  font-size: 2.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* Layout for the contact page */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 250px;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
